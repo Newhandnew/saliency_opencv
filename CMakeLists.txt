@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(saliency)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(saliency saliency.cpp)
+target_Link_Libraries(saliency ${OpenCV_LIBS})
